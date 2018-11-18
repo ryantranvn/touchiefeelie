@@ -1,0 +1,311 @@
+/* Fix default */
+    button:focus {outline:0;}
+/* FONTs */
+    @font-face {
+        font-family: MuliRegular;
+            src:   url('../../fonts/Muli/Muli-Regular.eot'); /* IE9 Compat Modes */
+            src:   url('../../fonts/Muli/Muli-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('../../fonts/Muli/Muli-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('../../fonts/Muli/Muli-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                    url('../../fonts/Muli/Muli-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    }
+    @font-face {
+        font-family: MuliLight;
+            src:   url('../../fonts/Muli/Muli-Light.eot'); /* IE9 Compat Modes */
+            src:   url('../../fonts/Muli/Muli-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('../../fonts/Muli/Muli-Light.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('../../fonts/Muli/Muli-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+                    url('../../fonts/Muli/Muli-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    }
+    @font-face {
+        font-family: MuliBold;
+            src:   url('../../fonts/Muli/Muli-Bold.eot'); /* IE9 Compat Modes */
+            src:   url('../../fonts/Muli/Muli-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('../../fonts/Muli/Muli-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('../../fonts/Muli/Muli-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+                    url('../../fonts/Muli/Muli-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    }
+/* font size */
+    $fontSize: 14px;
+
+/* mixin */
+    @mixin prefix($declarations, $prefixes: ()) {
+        @each $property, $value in $declarations {
+            @each $prefix in $prefixes {
+                #{'-' + $prefix + '-' + $property}: $value;
+            }
+            // Output standard non-prefixed declaration
+            #{$property}: $value;
+        }
+    }
+    @mixin keyframes($animationName) {
+        @-webkit-keyframes #{$animationName} {
+            $browser: '-webkit-' !global;
+            @content;
+        }
+        @-moz-keyframes #{$animationName} {
+            $browser: '-moz-' !global;
+            @content;
+        }
+        @-o-keyframes #{$animationName} {
+            $browser: '-o-' !global;
+            @content;
+        }
+        @keyframes #{$animationName} {
+            $browser: '' !global;
+            @content;
+        }
+    } 
+    $browser: null;
+
+/* border color */
+    .b-red {
+        border: solid 1px red;
+    }
+    .b-blue {
+        border: solid 1px blue;
+    }
+    .b-black {
+        border: solid 1px black;
+    }
+    .bg-red {
+        background-color: rgba(255,0,0,0.3) !important;
+    }
+    .bg-yellow {
+        background-color: rgba(255,255,0,0.3) !important;
+    }
+    .bg-blue {
+        background-color: rgba(255,0,255,0.3) !important;
+    }
+
+/* color */
+    $cBlue:  rgba(0, 190, 241, 1);//#00bef1;
+    $cLightBlue: rgba(189, 236, 255, 1); // #bdecff;
+    $cOrange:  rgba(254, 204, 78, 1);//#fecc4e;
+    $cText: #434343;
+
+    .c-blue {
+        color: $cBlue;
+    }
+    .c-light-blue {
+        color: $cLightBlue;
+    }
+    .c-orange {
+        color: $cOrange;
+    }
+    .c-text {
+        color: $cText;
+    }
+
+/* dimension */
+    $topHeight: 69px;
+    $navHeight: 69px;
+    $centerWidth: 1140px; // default of bootstrap
+    $buttonWidth: 242px;
+    .screen-md {
+        display: block !important;
+    }
+    .screen-lg {
+        display: none !important;
+    }
+    @media screen and (min-width: 1440px) {
+        $centerWidth: 2280px; // default of bootstrap
+        .screen-md {
+            display: none !important;
+        }
+        .screen-lg {
+            display: block !important;
+        }
+    }
+
+/* hamberger */
+    $hamburger-padding-x           : 25px;
+    $hamburger-padding-y           : 25px;
+    $hamburger-layer-width         : 25px;
+    $hamburger-layer-height        : 3px;
+    $hamburger-layer-spacing       : 4px;
+    $hamburger-layer-color         : $cBlue;
+    @import "hamburgers/hamburgers"; 
+
+/* Page Loader ================================= */
+    .page-loader-wrapper {
+        z-index: 99999999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #eee;
+        overflow: hidden;
+        text-align: center;
+
+        p {
+            font-size: 13px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+        .loader {
+            position: relative;
+            top: calc(50% - 30px);
+        }
+    }
+/* body */
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-size: 12px;
+        font-family: MuliRegular;
+        background-color: white;
+        color: $cText;
+        text-align: center;
+        height: 100%;
+    }
+    main {
+        height: 100%;
+    }
+    .p-0 {
+        padding: 0;
+    }
+    .p-l-0 {
+        padding-left: 0px;
+    }
+    .p-r-0 {
+        padding-right: 0px;
+    }
+    .m-0 {
+        margin: 0;
+    }
+    .m-l-0 {
+        margin-left: 0;
+    }
+    .m-r-0 {
+        margin-right: 0;
+    }
+
+    .fullLink {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+/* top */
+    #top {
+        width: 100%;
+        height: $topHeight;
+        background: $cBlue;
+        position: fixed;
+        top: 0; left: 0;
+        a {
+            color: $cText;
+        }
+        .language {
+            float: left; clear: none;
+            font-size: $fontSize;
+            height: 100%;
+            line-height: $topHeight;
+            width: 115px;
+
+        }
+        .social-link {
+            float: right; clear: none;
+            font-size: $fontSize;
+            line-height: $topHeight;
+            height: 100%;
+            width: 85px;
+
+            a {
+                margin-left: 10px
+            }
+        }
+        .hot-news {
+            font-size: $fontSize;
+            line-height: $topHeight;
+            height: 100%;
+            text-transform: uppercase;
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+/* navbar */
+    .navbar {
+        width: 100%;
+        height: $topHeight;
+        background: white;
+        position: fixed;
+        top: $topHeight; left: 0;
+        text-align: center;
+        margin-bottom: 0px;
+        border-bottom: solid 1px $cBlue;
+        overflow: hidden;
+        
+        .menu-button {
+            float: left;
+            clear: none;
+            padding-right: 20px;
+            border-right: solid 1px $cBlue;
+            overflow: hidden;
+            .hamburgers {
+                box-shadow: none;
+                border: none;
+            }
+            .text-menu {
+                font-size: $fontSize;
+                color: $cText;
+                line-height: $navHeight;
+                margin-left: -10px;
+            }
+        }
+        
+        .navbar-brand {
+            width: 30%;
+            height: 100%;
+            padding: 0px;
+            margin: auto;
+            vertical-align: middle;
+            float: none;
+            display: inline-block;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 0; right: 0;
+                top: 0; bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+
+/* footer */
+    footer {
+
+    }
+
+/* Home */
+    .home-page {
+        .home-bg {
+            background-image: url('../images/home-bg-md.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 1882px;
+        }
+
+        
+    }
+    // for large
+    @media screen and (min-width: 1440px) {
+        .home-page {
+            .home-bg {
+                background-image: url('../images/home-bg-lg.jpg');
+            }
+            
+        }
+    }
+
