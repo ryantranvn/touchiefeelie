@@ -1,4 +1,7 @@
 <?php
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+
+require('../app/helpers.php');
 
 return [
 
@@ -78,7 +81,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'vi',
 
     /*
     |--------------------------------------------------------------------------
@@ -172,7 +175,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+      
     ],
 
     /*

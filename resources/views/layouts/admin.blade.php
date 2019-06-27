@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cache-control" content="no-cache, no-store" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <link rel="shortcut icon" href="{{ asset(WEB.'/images/favicon.ico') }}" />
-    <meta name="description" content="M-art" />
-    <meta name="keywords" content="M-art" />
+    <link rel="icon" type="image/png" href="{{ asset('/favicon-16x16.png') }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ asset('/favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ asset('/favicon-96x96.png') }}" sizes="96x96">
+
+    <meta name="description" content="{{ PAGE_NAME }}" />
+    <meta name="keywords" content="{{ PAGE_NAME }}" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>M-art</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>{{ PAGE_NAME }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <!-- Styles -->
     @include('admin.partials.css_links')
     <!-- Scripts -->
@@ -26,25 +30,12 @@
     <![endif]-->
     @include('admin.partials.pass_to_js')
 </head>
-@if ($controller=='home')
-    @if ($action=='index')
-        @php($controller = 'home')
-    @else
-        @php($controller = 'error')
-    @endif
-@endif
-<body class="{{ $controller }}-page">
-    <header id="header" class="container-fluid">
-        @include('admin.partials.header')
-    </header>
-    <main>
-        @yield('content')
-    </main>
-    <footer id="footer" class="container-fluid">
-        @include('admin.partials.footer')
-    </footer>
+<body class="theme-{{ THEME_COLOR }} ls-closed">
     @include('admin.partials.page_loader')
-    <!-- Scripts -->
+    @include('admin.partials.search_bar')
+    @include('admin.partials.top_bar')
+    @include('admin.partials.left_sidebar')
+    @yield('content')
     @include('admin.partials.js_source')
 </body>
 </html>

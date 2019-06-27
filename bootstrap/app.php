@@ -1,7 +1,4 @@
 <?php
-require __DIR__.'/../config/constant.php';
-require_once __DIR__."/../app/Libraries/Mobile_Detect_2.php";
-
 /*
 |--------------------------------------------------------------------------
 | Create The Application
