@@ -15,8 +15,7 @@ class DashboardController extends Controller
 // index
     public function index()
     {
-        return view(ADMIN.'.dashboard',
-            compact(''));
+        return view(ADMIN.'.dashboard');
     }
 
 // 404

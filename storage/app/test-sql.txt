@@ -1,0 +1,296 @@
+SQL : (2019-11-10 10:02:30)select `customer_id`, `child_name`, `child_birthday`, `child_month`, `child_weight`, `father_name`, `father_tel`, `mother_name`, `mother_tel`, `address`, `branch`, `time_frame`, `note`, `guardian_name`, `pathological`, `feeling_experience`, `desire`, `created_at` from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 10:02:30)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 10:02:28)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 10:02:28)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 10:02:28)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:56:42)select `child_name`, `child_birthday` from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:56:42)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:56:40)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:56:40)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:56:40)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:43:55)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:43:55)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:43:20)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:43:20)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:43:17)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:43:17)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:43:17)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:38:41)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:38:41)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:38:37)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:38:37)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:38:37)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:37:46)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:37:46)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:37:46)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:37:40)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:37:40)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:37:40)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:37:25)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:37:25)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:37:25)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:36:15)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:36:13)select * from `posts` where `type` = ? and `posts`.`deleted_at` is null order by `created_at` desc, `updated_at` desc limit 15 offset 0
+Binndings : 
+news
+
+SQL : (2019-11-10 09:36:13)select count(*) as aggregate from `posts` where `type` = ? and `posts`.`deleted_at` is null
+Binndings : 
+news
+
+SQL : (2019-11-10 09:36:13)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:36:10)select * from `posts` where `type` = ? and `posts`.`deleted_at` is null order by `created_at` desc, `updated_at` desc limit 15 offset 0
+Binndings : 
+news
+
+SQL : (2019-11-10 09:36:10)select count(*) as aggregate from `posts` where `type` = ? and `posts`.`deleted_at` is null
+Binndings : 
+news
+
+SQL : (2019-11-10 09:36:10)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:35:49)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:35:49)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:35:49)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:35:11)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:35:11)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:35:11)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:35:09)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:35:09)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:35:09)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:35:01)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:35:01)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:35:01)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:32:29)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:32:29)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:30:19)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:30:19)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:30:00)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:30:00)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:30:00)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:27:34)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:27:34)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:27:34)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:27:32)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:23:05)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:23:05)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:23:02)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:22:57)select * from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:22:57)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:22:40)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:18:59)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:16:46)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:11:08)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:10:11)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:10:11)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:10:11)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:10:11)select * from `customers` where `customers`.`customer_id` = ? and `customers`.`deleted_at` is null limit 1
+Binndings : 
+export
+
+SQL : (2019-11-10 09:10:11)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:10:01)select * from `customers` where `customers`.`deleted_at` is null order by `customer_id` desc limit 15 offset 0
+Binndings : 
+
+SQL : (2019-11-10 09:10:01)select count(*) as aggregate from `customers` where `customers`.`deleted_at` is null
+Binndings : 
+
+SQL : (2019-11-10 09:10:01)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:09:57)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 09:09:57)select * from `customers` where `customers`.`customer_id` = ? and `customers`.`deleted_at` is null limit 1
+Binndings : 
+export
+
+SQL : (2019-11-10 09:09:57)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 08:56:26)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 08:55:50)select * from `users` where `user_id` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+1
+
+SQL : (2019-11-10 08:55:50)select * from `users` where `email` = ? and `users`.`deleted_at` is null limit 1
+Binndings : 
+admin@touchiefeelie.com

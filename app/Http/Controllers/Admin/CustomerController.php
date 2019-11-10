@@ -8,6 +8,8 @@ use Auth;
 use DB;
 use App\Customer;
 use App\Http\Requests\CustomerRequest;
+use App\Exports\CustomerExport;
+use Excel;
 
 class CustomerController extends Controller
 {
@@ -143,4 +145,11 @@ class CustomerController extends Controller
         }
         return redirect(url(ADMIN.'/customer'));
     }
+// export
+    public function export() 
+    {
+        return Excel::download(new CustomerExport, 'customer.xlsx');
+    }
+
+
 }

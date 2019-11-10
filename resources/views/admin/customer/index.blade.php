@@ -1,6 +1,15 @@
 @extends('admin.partials.sub_layout')
 
 @section('action')
+    <div class="row">
+		<div class="col-sm-12">
+			<div class="block-header">
+				<a href="{{ url('/'.ADMIN.'/export_customer') }}" class="btn btn-primary waves-effect btnCreate" role="button">
+			        <i class="material-icons">cloud_download</i> Export
+			    </a>
+			</div>
+		</div>
+	</div>
 	<div class="row">
         <div class="col-sm-12">
             @if (!isset($customers) || $customers->count() == 0)
@@ -62,5 +71,6 @@
                 </div>
             @endif
         </div>
+        <button class="btn btn-success">Export</button>
     </div>
 @endsection

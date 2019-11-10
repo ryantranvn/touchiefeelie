@@ -17,11 +17,13 @@
     });
 
 /* Admin */
+    
    	Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth'], function () {
 
         Route::get('/', 'DashboardController@index')->name('admin.dashboard');
         Route::get('/dashboard', 'DashboardController@index');
         Route::resource('/customer', 'CustomerController');
+        Route::get('/export_customer', 'CustomerController@export');
         Route::resource('/blog', 'BlogController');
         Route::resource('/news', 'NewsController');
         Route::resource('/calendar', 'CalendarController');
